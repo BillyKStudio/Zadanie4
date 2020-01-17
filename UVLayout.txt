@@ -1,0 +1,28 @@
+https://www.headus.com/phpbb/viewtopic.php?t=714&postdays=0&postorder=asc&start=0
+
+Thanks for your feedback, and GUI prototype! 
+
+The reason why UVLayout has a 90's style GUI is because its all based on Motif code I wrote in the 90's.
+ You'll also be pleased to hear that UVLayout is written in 90's style plain C, and all my graphics code is IRIS GL
+ (it sits on top of a library that coverts the calls into Open GL). Oh, and I use 'vi' and 'make' still :-) 
+
+So yes, the outcome of all of that is that the final result looks dated. But by using old code I'm familiar with, I can spend more time on the interesting stuff
+ ... the UV editing code. Eventually though, when the mechanics of the UV editing is sorted out, I'll definitely be looking at the whole GUI thing. 
+
+The Motif based code I'm using (which sits on top of Tcl/Tk under Windows) does support bit mapped buttons, so that would probably be the first step.
+ What I'm anticipating is that the existing font based buttons would be captured into bitmaps, and then someone like yourself could go through and repaint
+ the bitmaps however you wanted. I'd also export some parameters for each button (e.g. label, font size and overall dimensions) so that the repainting could be
+ scripted. GIMP supports that sort of thing via Python or its inbuilt scripting language, so I'm guessing PS does too? 
+I'd probably have to do the button repositioning here (i.e. provide the users with some alternate layouts to choose from), 
+and then you repaint the buttons according that that. 
+
+
+"Surely that won't take more than a week?" 
+
+Actually a week of development time turns into about a month of real time once you add in things like emails, forums, phones, quotes, orders, tax returns.
+ Its amazing anything ever gets done :-) 
+
+I do accept that some people might be put off by the GUI, but the hope is that one day they'll come back (like you did),
+ and if that's when UVLayout looks modern and sophisticated, then that's OK. 
+
+Phil
